@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Windows 10</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="windowsStil.css">
+</head>
+<body>
+<div id="meni">
+	<a href="Nike.html" class="meniGumb">NIKE</img></a>
+	<a href="Pepsi.html" class="meniGumb">PEPSI</a>
+	<a href="Windows.html" class="meniGumb">WINDOWS 10</a>
+</div>
+
+<div id="sredina">
+  <canvas id="canvas" width="999" height="490">
+  
+  </canvas>
+  <div id="ikone">
+	<img src="slike/trashbin.png" id="trashbin">
+	<img src="slike/chrome.png" id="chrome">
+	<img src="slike/fox.png" id="firefox">
+	<img src="slike/winrar.png" id="winrar">
+	<img src="slike/notepad.png" id="notepad">
+	<img src="slike/gimp.png" id="gimp">
+	<img src="slike/netbeans.png" id="netbeans">
+	<img src="slike/acrobat.png" id="acrobat">
+	<img src="slike/putty.png" id="putty">
+  </div>
+  <p id="klikni">
+	Klikni, da spremeniš barvo logotipu
+	</p>
+  <div id="taskbar">
+	<img src="slike/taskBar.png" height="38.5" width="1903">
+  </div>
+</div>
+ <div id="spodnji">
+	<div id="primerjava">
+		<p class="primerjavaText" id="napis1">BEZIER</p>
+		<p class="primerjavaText" id="napis2">SVG</p>
+		<p class="primerjavaText" id="napis3">ORIGINAL</p>
+	</div>
+	<div id="bezier">
+		<canvas id="drugi" width="604" height="328">
+  
+		</canvas>
+	 </div>
+	  <div id="SVG">
+		<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+			 width="459.000000pt" height="333.000000pt" viewBox="0 60 619.000000 333.000000"
+			 preserveAspectRatio="xMidYMid meet">
+
+			<g transform="translate(0.000000,333.000000) scale(0.100000,-0.100000)"
+			fill="rgb(0,120,215)" stroke="none">
+			<path d="M4380 3169 c-178 -27 -349 -53 -810 -120 -118 -17 -309 -45 -425 -63
+			l-210 -31 -2 -603 -3 -602 820 0 820 0 0 725 c0 399 -1 724 -2 724 -2 -1 -86
+			-14 -188 -30z"/>
+			<path d="M2425 2884 c-170 -24 -427 -59 -570 -79 -143 -20 -272 -38 -287 -41
+			l-28 -6 0 -509 0 -509 620 0 620 0 0 595 0 595 -22 -1 c-13 -1 -162 -21 -333
+			-45z"/>
+			<path d="M1540 1090 l0 -510 23 -5 c12 -2 139 -21 282 -40 534 -74 901 -125
+			918 -129 16 -4 17 30 17 595 l0 599 -620 0 -620 0 0 -510z"/>
+			<path d="M2937 1583 c-4 -3 -7 -273 -7 -600 0 -466 3 -595 13 -598 11 -4 203
+			-32 1222 -175 193 -27 362 -52 378 -55 l27 -4 0 719 0 720 -813 0 c-448 0
+			-817 -3 -820 -7z"/>
+			</g>
+		</svg>
+	  </div>
+	  <div id="original">
+		<img src="slike/win3.png" id="slika">
+	  </div>
+	</div>
+	<div id="noga">
+	<p>Stran ustvaril: Luka Grahor</p>
+	<br>
+		Powered by <a href="http://www.scng.si/">scng.si</a>
+	</div>
+<script>
+	var c = document.getElementById("canvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(305, 91);
+	ctx.quadraticCurveTo(305, 91, 305, 228);
+	ctx.quadraticCurveTo(305, 228, 470, 227);
+	ctx.quadraticCurveTo(470, 227,470, 69);
+	ctx.quadraticCurveTo(470, 69,305,91);
+	ctx.moveTo(490, 66);
+	ctx.quadraticCurveTo(490, 66, 490, 227);
+	ctx.quadraticCurveTo(490, 227, 708, 227);
+	ctx.quadraticCurveTo(708, 227,708,34);
+	ctx.quadraticCurveTo(708,34,490,66);
+	ctx.moveTo(305, 246);
+	ctx.quadraticCurveTo(305, 246, 305, 383);
+	ctx.quadraticCurveTo(305, 383, 470, 406);
+	ctx.quadraticCurveTo(470, 406,470,246);
+	ctx.quadraticCurveTo(470,246,305, 246);
+	ctx.moveTo(490, 247);
+	ctx.quadraticCurveTo(490, 247, 490, 408);
+	ctx.quadraticCurveTo(490, 408, 709, 439);
+	ctx.quadraticCurveTo(709, 439,709,247);
+	ctx.quadraticCurveTo(709,247,490, 247);
+	ctx.lineWidth=0.2;
+	ctx.fillStyle='White';
+	ctx.stroke();
+	ctx.fill();
+
+</script>
+<script>
+	var c = document.getElementById("drugi");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(154, 55);
+	ctx.quadraticCurveTo(154, 55, 154, 159);
+	ctx.quadraticCurveTo(154, 159, 278, 160);
+	ctx.quadraticCurveTo(278, 160,278, 38);
+	ctx.quadraticCurveTo(278, 38,154, 55);
+	ctx.moveTo(294, 37);
+	ctx.quadraticCurveTo(294, 37, 294, 159);
+	ctx.quadraticCurveTo(294, 159, 457, 160);
+	ctx.quadraticCurveTo(457, 160, 457,14);
+	ctx.quadraticCurveTo(457,14,294, 37);
+	ctx.moveTo(155, 172);
+	ctx.quadraticCurveTo(155, 172, 155, 277);
+	ctx.quadraticCurveTo(155, 277, 278, 294);
+	ctx.quadraticCurveTo(278, 294,278,173);
+	ctx.quadraticCurveTo(278,173,155, 172);
+	ctx.moveTo(294, 172);
+	ctx.quadraticCurveTo(294, 172, 294, 295);
+	ctx.quadraticCurveTo(294, 295, 458, 319);
+	ctx.quadraticCurveTo(458, 319,458,173);
+	ctx.quadraticCurveTo(458,173,294, 172);
+	ctx.lineWidth=0.2;
+	ctx.fillStyle='rgb(0,120,215)';
+	ctx.stroke();
+	ctx.fill();
+
+</script>
+<script>
+	function App() {
+  /*
+   * Create our canvas and context and add an event listener.  
+   */
+  var canvas = document.getElementById("canvas");
+  this.context = canvas.getContext('2d');
+  document.addEventListener('mousedown', this.onClick.bind(this), false);
+}
+
+App.prototype.onClick = function(event) {
+  /*
+   * If the event is a left mouse click, randomly generate a new color
+   * and call the fill() method.
+   */
+  if (event.which === 1) {
+    var color = [];
+    for (var i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+    }
+    this.fill('rgb(' + color.join(',') + ')');
+  }
+};
+
+App.prototype.fill = function(color) {
+  /*
+   * Fill the canvas with the new color.
+   */
+  this.context.fillStyle = color;
+  this.context.fill();
+};
+
+
+function run() {
+  new App();
+}
+
+window.onload = run;
+run();
+</script>
+</body>
+</html>
+

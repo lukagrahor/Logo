@@ -1,0 +1,221 @@
+*{
+	padding:0;
+	margin:0;
+}
+@font-face {
+  font-family:Asap;
+  src: url('Asap-Regular.ttf');
+}
+body{
+	background:url("slike/carbon.png");
+}
+#meni{
+	background-color:rgb(8,15,51);
+	height:50px;
+	display:flex;
+	align-items: center;
+}
+#sredina{
+	background:rgb(0,120,215);
+	width:1905px;
+	height:650px;
+	text-align:center;
+	padding-top:40px;
+	position:relative;
+}
+#taskbar{
+	position:absolute;
+	top:650px;
+}
+#canvas{
+	position:absolute;
+	left:450px;
+}
+#ikone{
+	position:relative;
+	float:left;
+	width:200px;
+	height:500px;
+	margin-top:-39.8px;
+}
+#chrome{
+	width:45px;
+	height:45px;
+	position:absolute;
+	left:10px;
+	top:80px;
+}
+#trashbin{
+	top:15px;
+	width:45px;
+	height:45px;
+	position:absolute;
+	left:10px;
+}
+#firefox{
+	top:143px;
+	width:40px;
+	height:40px;
+	position:absolute;
+	left:10px;
+}
+#winrar{
+	top:200px;
+	width:40px;
+	height:40px;
+	position:absolute;
+	left:10px;
+}
+#notepad{
+	top:253px;
+	width:42px;
+	height:42px;
+	position:absolute;
+	left:10px;
+}
+#gimp{
+	top:310px;
+	width:55px;
+	height:40px;
+	position:absolute;
+	left:5px;
+}
+#netbeans{
+	top:365px;
+	width:40px;
+	height:40px;
+	position:absolute;
+	left:10px;
+}
+#acrobat{
+	top:420px;
+	width:40px;
+	height:40px;
+	position:absolute;
+	left:10px;
+}
+#putty{
+	top:470px;
+	width:40px;
+	height:40px;
+	position:absolute;
+	left:10px;
+}
+#logo{
+	width:200px;
+	height:40px;
+	padding-top:8px;
+}
+#klikni{
+	position:absolute;
+	left:720px;
+	top:570px;
+	color:white;
+	font-weight:bold;
+	font-size:30px;
+	font-family:Asap;
+}
+#naslov{
+	display:inline-block;
+	position:absolute;
+	font-size:45px;
+	font-style:italic;
+	top:2px;
+}
+#spodnji{
+	background:rgba(218, 223, 225, 1);
+	height:400px;
+	position:relative;
+}
+#primerjava{
+	position:relative;
+}
+#napis1{
+	position:absolute;
+	left:265px;
+	top:-3px;
+}
+#napis2{
+	position:absolute;
+	left:910px;
+	top:-3px;
+}
+#napis3{
+	position:absolute;
+	left:1510px;
+	top:-3px;
+}
+#bezier{
+	width:455pt;
+	height:247.8pt;
+	float:left;
+	position:absolute;
+	top:30px;
+	left:18px;
+	background:white;
+}
+#SVG{
+	background:white;
+	width:445pt;
+	height:248pt;
+	float:left;
+	position:absolute;
+	left:647px;
+	top:30px;
+}
+#original{
+	background:white;
+	width:456pt;
+	height:247.5pt;
+	float:left;
+	position:absolute;
+	left:1275px;
+	top:30px;
+}
+#slika{
+	width:304px;
+	height:306px;
+	margin-left:155px;
+	margin-top:12px;
+}
+#noga{
+	font-family:Asap;
+	width:1905px;
+	height:100px;
+	padding-top:45px;
+	text-align:center;
+	font-size:15px;
+	color:white;
+}
+p{
+	font-family:Asap;
+	font-size:18px;
+}
+.opisOzadje{
+	background-color:rgb(220,220,220);
+	text-align:center;
+	color:black;
+	height:40px;
+	display:flex;
+	align-items:center;
+}
+.primerjavaText{
+	font-family:Asap;
+	position:absolute;
+	font-weight:bold;
+	font-size:30px;
+}
+.meniGumb{
+	color:white;
+	font-size:18px;
+	font-family:Asap;
+	text-decoration:none;
+	padding:10px;
+}
+a:hover{
+	background-color:rgb(220,220,220);
+	color:black;
+	height:30px;
+	display:flex;
+	align-items: center;
+}

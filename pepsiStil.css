@@ -1,0 +1,184 @@
+*{
+	padding:0;
+	margin:0;
+}
+@font-face {
+  font-family:Asap;
+  src: url('Asap-Regular.ttf');
+}
+@font-face {
+  font-family:Pepsi;
+  src: url('PEPSI_pl.ttf');
+}
+body{
+	background:url("slike/carbon.png");
+	
+}
+#meni{
+	background-color:rgb(8,15,51);
+	height:50px;
+	display:flex;
+	align-items: center;
+}
+#sredina{
+	background:url("slike/ozadje.jpg");
+	width:1905px;
+	height:890px;
+	text-align:center;
+	padding-top:3px;
+	position:relative;
+}
+#opis{
+	background:url("slike/white-waves.png");
+	width:100%;
+	text-align:center;
+	position:relative;
+}
+#naslov{
+	display:inline-block;
+	position:absolute;
+	font-size:45px;
+	font-style:italic;
+	top:2px;
+}
+#spodnji{
+	background:rgba(218, 223, 225, 1);
+	height:390px;
+	position:relative;
+}
+#primerjava{
+	position:relative;
+}
+#napis1{
+	position:absolute;
+	left:260px;
+	top:-2px;
+}
+#napis2{
+	position:absolute;
+	left:913px;
+	top:-2px;
+}
+#napis3{
+	position:absolute;
+	left:1510px;
+	top:-2px;
+}
+#bezier{
+	width:455pt;
+	height:247.8pt;
+	float:left;
+	position:absolute;
+	top:30px;
+	left:18px;
+	background:rgb(0 92 184);
+}
+#SVG{
+	background:white;
+	width:445pt;
+	height:240pt;
+	float:left;
+	position:absolute;
+	left:647px;
+	top:30px;
+}
+#original{
+	background:rgb(0 92 184);
+	width:456pt;
+	height:247.5pt;
+	float:left;
+	position:absolute;
+	left:1275px;
+	top:30px;
+}
+#slika{
+	width:256pt;
+	height:247.5pt;
+	padding-left:130px;
+}
+#canvasa{
+	transform:scale(0.8);
+	position:absolute;
+	top:115px;
+	left:140px;
+}
+#canvasa2{
+	transform:scale(0.7);
+	position:absolute;
+	top:-172px;
+	left:30px;
+}
+#krog{
+	transform:scale(0.85);
+	float:left;
+	position:absolute;
+	left:693px;
+	top:6px;
+}
+#krog2{
+	transform:scale(1.01);
+	float:left;
+	position:absolute;
+	left:80px;
+	top:230px;
+}
+#noga{
+	font-family:Asap;
+	width:1905px;
+	height:100px;
+	padding-top:45px;
+	text-align:center;
+	font-size:15px;
+	color:white;
+}
+#vsebina{
+	width:200px;
+	height:750px;
+	position:absolute;
+	left:700px;
+	top:0;
+}
+#vsebina2{
+	width:200px;
+	height:750px;
+	position:absolute;
+	float:left;
+	transform:scale(0.93);
+	top:220px;
+	left:90px;
+}
+#canvas{
+	transform:scale(0.8);
+}
+p{
+	font-family:Asap;
+	font-size:18px;
+}
+.opisOzadje{
+	background-color:rgb(220,220,220);
+	text-align:center;
+	color:black;
+	height:40px;
+	display:flex;
+	align-items:center;
+}
+.primerjavaText{
+	font-family:Pepsi;
+	position:absolute;
+	font-weight:bold;
+	font-size:30px;
+}
+.meniGumb{
+	color:white;
+	font-size:18px;
+	font-family:Asap;
+	text-decoration:none;
+	padding:10px;
+}
+a:hover{
+	background-color:rgb(220,220,220);
+	color:black;
+	height:30px;
+	display:flex;
+	align-items:center;
+}

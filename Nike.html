@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nike</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="nikeStil.css">
+	<meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+	/>
+</head>
+<body>
+<div id="meni">
+	<a href="Nike.html" class="meniGumb">NIKE</img></a>
+	<a href="Pepsi.html" class="meniGumb">PEPSI</a>
+	<a href="Windows.html" class="meniGumb">WINDOWS 10</a>
+</div>
+<div id="sredina">
+<p id="klikni">
+	Klikni, da spremeniš barvo logotipu
+</p>
+  <canvas id="canvas" width="999" height="490">
+  
+  </canvas>
+</div>
+ <div id="spodnji">
+	<div id="primerjava">
+		<p class="primerjavaText" id="napis1">BEZIER</p>
+		<p class="primerjavaText" id="napis2">SVG</p>
+		<p class="primerjavaText" id="napis3">ORIGINAL</p>
+	</div>
+	<div id="bezier">
+		<canvas id="drugi" width="604" height="322">
+  
+		</canvas>
+	 </div>
+	  <div id="SVG">
+		<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+			width="463.000000pt" height="352.000000pt" viewBox="15 0 2400.000000 1840.000000"
+			preserveAspectRatio="xMidYMid meet">
+			<g transform="translate(0.000000,1295.000000) scale(0.100000,-0.100000)"
+			fill="#000000" stroke="none">
+			<path d="M0 6475 l0 -6475 12000 0 12000 0 0 6475 0 6475 -12000 0 -12000 0 0
+			-6475z m4326 3840 c-45 -68 -166 -288 -240 -435 -296 -585 -477 -1142 -542
+			-1665 -21 -168 -24 -506 -6 -645 54 -406 188 -721 432 -1013 244 -292 566
+			-489 966 -592 510 -132 1155 -119 1919 36 209 43 -46 -25 9510 2515 2803 746
+			3285 874 3775 1004 261 69 1620 431 2335 621 143 38 265 69 270 69 6 0 -219
+			-99 -500 -219 -1390 -596 -5328 -2281 -7595 -3251 -916 -392 -2178 -932 -2805
+			-1200 -4312 -1846 -4811 -2058 -5120 -2182 -918 -368 -1748 -588 -2505 -664
+			-206 -21 -657 -24 -820 -6 -499 56 -881 183 -1215 405 -132 88 -206 151 -351
+			299 -331 339 -510 708 -580 1193 -24 166 -24 528 0 720 71 563 232 1066 541
+			1690 454 917 1121 1802 2449 3248 91 99 111 116 82 72z"/>
+			</g>
+		</svg>
+	  </div>
+	  <div id="original">
+		<img src="slike/nike.png" id="slika">
+	  </div>
+	</div>
+	<div id="noga">
+	<p>Stran ustvaril: Luka Grahor</p>
+	<br>
+		Powered by <a href="http://www.scng.si/">scng.si</a>
+	</div>
+<script>
+	var c = document.getElementById("canvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(255, 10);
+	ctx.bezierCurveTo(50, 170, -50,510, 400, 300);
+	ctx.quadraticCurveTo(400, 300, 1000, 10);
+	ctx.quadraticCurveTo(1000, 5,400, 200);
+	ctx.quadraticCurveTo(115, 300,255, 10);
+	ctx.fillStyle='White';
+	ctx.fill();	
+</script>
+<script>
+	var a = document.getElementById("drugi");
+	var atx = a.getContext("2d");
+	atx.beginPath();
+	atx.moveTo(122, 60);
+	atx.bezierCurveTo(95, 85, 67,114, 43, 155);
+	atx.bezierCurveTo(20, 200, 35,233, 59, 247);
+	atx.bezierCurveTo(75, 258, 112,264, 155, 250);
+	atx.quadraticCurveTo(170, 250, 580, 70);
+	atx.quadraticCurveTo(580, 70,185,179);
+	atx.bezierCurveTo(130, 187, 98,164, 100, 131);
+	atx.quadraticCurveTo(98,104,122,59);
+	atx.lineWidth=2;
+	atx.fillStyle='White';
+	atx.stroke();
+	atx.fill();
+</script>
+<script>
+	function App() {
+  /*
+   * Create our canvas and context and add an event listener.  
+   */
+  var canvas = document.getElementById("canvas");
+  this.context = canvas.getContext('2d');
+  document.addEventListener('mousedown', this.onClick.bind(this), false);
+}
+
+App.prototype.onClick = function(event) {
+  /*
+   * If the event is a left mouse click, randomly generate a new color
+   * and call the fill() method.
+   */
+  if (event.which === 1) {
+    var color = [];
+    for (var i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+    }
+    this.fill('rgb(' + color.join(',') + ')');
+  }
+};
+
+App.prototype.fill = function(color) {
+  /*
+   * Fill the canvas with the new color.
+   */
+  this.context.fillStyle = color;
+  this.context.fill();
+};
+
+
+function run() {
+  new App();
+}
+
+window.onload = run;
+run();
+</script>
+</body>
+</html>
+

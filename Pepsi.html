@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pepsi</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="pepsiStil.css">
+</head>
+<body>
+<div id="meni">
+	<a href="Nike.html" class="meniGumb">NIKE</a>
+	<a href="Pepsi.html" class="meniGumb">PEPSI</img></a>
+	<a href="Windows.html" class="meniGumb">WINDOWS 10</img></a>
+</div>
+
+<div id="sredina">
+	<div id="canvasa">
+		<div id="krogBg">
+		<canvas id="krog" width="704" height="522">
+	  
+		</canvas>
+		</div>
+		<div id="vsebina">
+			<canvas id="canvas" width="599" height="550">
+	  
+			</canvas>
+		</div>
+	</div>
+	<img id="can" src="slike/can.png">
+</div>
+ <div id="spodnji">
+	<div id="primerjava">
+		<p class="primerjavaText" id="napis1">BEZIER</p>
+		<p class="primerjavaText" id="napis2">SVG</p>
+		<p class="primerjavaText" id="napis3">ORIGINAL</p>
+	</div>
+	<div id="bezier">
+		<div id="canvasa2">
+			<div id="krogBg2">
+			<canvas id="krog2" width="704" height="522">
+		  
+			</canvas>
+			</div>
+			<div id="vsebina2">
+				<canvas id="canvas2" width="599" height="550">
+		  
+				</canvas>
+			</div>
+		</div>
+	 </div>
+	  <div id="SVG">
+			<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+		 width="447.000000pt" height="331.000000pt" viewBox="10s 0 609.000000 331.000000"
+		 preserveAspectRatio="xMidYMid meet">
+
+			<g transform="translate(0.000000,331.000000) scale(0.100000,-0.100000)"
+			fill="rgb(0 92 184)" stroke="none">
+			<path d="M0 1660 l0 -1650 3040 0 3040 0 0 1650 0 1650 -1467 -1 c-1265 -1
+			-1455 -3 -1371 -14 724 -99 1299 -632 1440 -1337 32 -160 32 -444 -1 -598 -68
+			-320 -218 -603 -441 -830 -244 -248 -532 -403 -891 -482 -92 -20 -132 -22
+			-344 -22 -212 0 -252 2 -345 22 -226 49 -438 138 -626 263 -150 100 -353 303
+			-453 453 -585 881 -207 2035 795 2429 103 41 253 80 364 96 41 6 86 13 100 15
+			14 2 -620 4 -1407 5 l-1433 1 0 -1650z"/>
+			</g>
+			<g transform="translate(0.000000,331.000000) scale(0.100000,-0.100000)"
+			fill="rgb(238, 19, 49)" stroke="none">
+			<path d="M2885 3184 c-235 -24 -419 -75 -612 -172 -282 -142 -543 -403 -685
+			-685 -52 -104 -113 -287 -135 -407 -26 -142 -23 -401 6 -540 30 -142 70 -259
+			130 -378 38 -76 119 -208 147 -240 6 -8 305 99 428 152 650 280 1205 784 1545
+			1402 87 159 195 410 235 549 5 17 -6 28 -56 62 -163 107 -380 193 -581 232
+			-103 20 -336 34 -422 25z"/>
+			</g>
+			<g transform="translate(0.000000,331.000000) scale(0.100000,-0.100000)"
+			fill="rgb(39 81 184)" stroke="none">
+			<path d="M4344 2455 c3 -11 11 -40 18 -65 8 -28 13 -106 13 -210 0 -148 -3
+			-175 -27 -260 -91 -327 -304 -569 -639 -729 -199 -96 -383 -148 -930 -266
+			-465 -100 -947 -220 -967 -240 -8 -8 49 -69 131 -143 158 -141 345 -248 551
+			-317 157 -53 279 -75 456 -82 293 -11 548 47 812 184 671 349 983 1131 732
+			1838 -40 112 -166 357 -150 290z"/>
+			</g>
+		</svg>
+	  </div>
+	  <div id="original">
+		<img src="slike/pepsiLogo.png" id="slika">
+	  </div>
+	</div>
+	<div id="noga">
+	<p>Stran ustvaril: Luka Grahor</p>
+	<br>
+		Powered by <a href="http://www.scng.si/">scng.si</a>
+	</div>
+<script>
+	var c = document.getElementById("krog");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(300, 20);
+	ctx.bezierCurveTo(60, 20, 60, 240,60,240);
+	ctx.bezierCurveTo(60,240, 60, 480,300,480);
+	ctx.bezierCurveTo(300,480, 540, 480,540,240);
+	ctx.bezierCurveTo(540,240, 540, 20,300, 20);
+	ctx.fillStyle='White';
+	ctx.lineWidth=2;
+	ctx.fill();
+</script>
+<script>
+	var c = document.getElementById("canvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(105, 383);
+	ctx.bezierCurveTo(105, 383, 400, 340,450,66);
+	ctx.bezierCurveTo(450,66, 420, 25,300,20);
+	ctx.bezierCurveTo(60, 20, 60, 240,60,240);
+	ctx.bezierCurveTo(60, 240, 60, 320,105,383);
+	ctx.fillStyle='rgb(238, 19, 49)';
+	ctx.fill();
+</script>
+<script>
+	var c = document.getElementById("canvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(115, 400);
+	ctx.bezierCurveTo(250, 360, 560, 430,505,120);
+	ctx.bezierCurveTo(505,120, 543, 190,540,240);
+	ctx.bezierCurveTo(540,240, 560, 460,300,480);
+	ctx.bezierCurveTo(300,480, 190, 490,115, 400);
+	ctx.fillStyle='rgb(39 81 184)';
+	ctx.fill();
+</script>
+<script>
+	var c = document.getElementById("krog2");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(300, 20);
+	ctx.bezierCurveTo(60, 20, 60, 240,60,240);
+	ctx.bezierCurveTo(60,240, 60, 480,300,480);
+	ctx.bezierCurveTo(300,480, 540, 480,540,240);
+	ctx.bezierCurveTo(540,240, 540, 20,300, 20);
+	ctx.fillStyle='White';
+	ctx.lineWidth=2;
+	ctx.fill();
+</script>
+<script>
+	var c = document.getElementById("canvas2");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(105, 383);
+	ctx.bezierCurveTo(105, 383, 400, 340,450,66);
+	ctx.bezierCurveTo(450,66, 420, 25,300,20);
+	ctx.bezierCurveTo(60, 20, 60, 240,60,240);
+	ctx.bezierCurveTo(60, 240, 60, 320,105,383);
+	ctx.fillStyle='rgb(238, 19, 49)';
+	ctx.fill();
+</script>
+<script>
+	var c = document.getElementById("canvas2");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(115, 400);
+	ctx.bezierCurveTo(250, 360, 560, 430,505,120);
+	ctx.bezierCurveTo(505,120, 543, 190,540,240);
+	ctx.bezierCurveTo(540,240, 560, 460,300,480);
+	ctx.bezierCurveTo(300,480, 190, 490,115, 400);
+	ctx.fillStyle='rgb(39 81 184)';
+	ctx.fill();
+</script>
+</body>
+</html>
+

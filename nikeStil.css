@@ -1,0 +1,148 @@
+*{
+	padding:0;
+	margin:0;
+}
+@font-face {
+  font-family:Asap;
+  src: url('Asap-Regular.ttf');
+}
+@font-face {
+  font-family:Nike;
+  src: url('Nike.otf');
+}
+body{
+	background:url("slike/carbon.png");
+	
+}
+#meni{
+	background-color:rgb(8,15,51);
+	height:50px;
+	display:flex;
+	align-items: center;
+}
+#sredina{
+	background:url("slike/cork-board.png");
+	width:1905px;
+	height:500px;
+	text-align:center;
+	padding-top:40px;
+}
+#canvas{
+	transform:scale(0.8);
+}
+#logo{
+	width:60px;
+	height:40px;
+	padding-top:8px;
+}
+#naslov{
+	display:inline-block;
+	position:absolute;
+	font-size:45px;
+	font-style:italic;
+	top:2px;
+}
+#spodnji{
+	background:rgba(218, 223, 225, 1);
+	height:400px;
+	position:relative;
+}
+#primerjava{
+	position:relative;
+}
+#napis1{
+	position:absolute;
+	left:270px;
+	top:-3px;
+}
+#napis2{
+	position:absolute;
+	left:920px;
+	top:-3px;
+}
+#napis3{
+	position:absolute;
+	left:1530px;
+	top:-3px;
+}
+#bezier{
+	width:455pt;
+	height:247.8pt;
+	float:left;
+	position:absolute;
+	top:30px;
+	left:18px;
+	background:black;
+}
+#SVG{
+	background:white;
+	width:445pt;
+	height:240pt;
+	float:left;
+	position:absolute;
+	left:647px;
+	top:30px;
+}
+#original{
+	background:white;
+	width:456pt;
+	height:247.5pt;
+	float:left;
+	position:absolute;
+	left:1275px;
+	top:30px;
+}
+#slika{
+	width:456pt;
+	height:247.5pt;
+}
+#noga{
+	font-family:Asap;
+	width:1905px;
+	height:100px;
+	padding-top:45px;
+	text-align:center;
+	font-size:15px;
+	color:white;
+}
+#klikni{
+	position:absolute;
+	left:720px;
+	top:550px;
+	color:white;
+	font-weight:bold;
+	font-size:30px;
+	font-family:Asap;
+}
+p{
+	font-family:Asap;
+	font-size:18px;
+}
+.opisOzadje{
+	background-color:rgb(220,220,220);
+	text-align:center;
+	color:black;
+	height:40px;
+	display:flex;
+	align-items:center;
+}
+.primerjavaText{
+	font-family:Nike;
+	position:absolute;
+	font-weight:bold;
+	font-size:30px;
+}
+.meniGumb{
+	color:white;
+	font-size:18px;
+	font-family:Asap;
+	text-decoration:none;
+	padding:10px;
+}
+a:hover{
+	background-color:rgb(220,220,220);
+	color:black;
+	height:30px;
+	display:flex;
+	align-items: center;
+}
